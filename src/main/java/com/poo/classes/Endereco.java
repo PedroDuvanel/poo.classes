@@ -10,6 +10,12 @@ public class Endereco {
     String complemento;
     int numEndereco;
 
+    public int getenderecoId() {
+
+        return enderecoId;
+
+    }
+
     public String getUf () {
 
         return uf;
@@ -46,6 +52,12 @@ public class Endereco {
 
     }
 
+
+    public void setenderecoId(int enderecoId) {
+
+        this.enderecoId = enderecoId;
+
+    }
 
     public void setUf(String uf) {
 
