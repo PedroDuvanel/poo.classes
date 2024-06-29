@@ -8,6 +8,12 @@ public class Pessoa {
     String rg;
     String nome;
 
+    public int getpessoaId() {
+
+        return pessoaId;
+
+    }
+
     public String getNome() {
 
         return nome;
@@ -23,6 +29,12 @@ public class Pessoa {
     public String getRg() {
 
         return rg;
+
+    }
+
+    public void setpessoaId(int pessoaId) {
+
+        this.pessoaId = pessoaId;
 
     }
 
