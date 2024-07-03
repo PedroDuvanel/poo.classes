@@ -2,10 +2,22 @@ package com.poo.classes;
 
 public class Livro {
 
+    private static int contadorLivro = 0;
+
     int livroId;
     String edicao;
     String titulo;
     int ano;
+
+    public Livro(int livroId, String edicao, String titulo, int ano){
+
+        this.edicao = edicao;
+        this.titulo = titulo;
+        this.ano = ano;
+        this.livroId = contadorLivro;
+        contadorLivro++;
+
+    }
 
     public int getLivroId() {
 

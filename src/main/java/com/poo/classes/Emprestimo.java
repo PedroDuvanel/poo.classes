@@ -4,9 +4,18 @@ import java.util.Date;
 
 public class Emprestimo {
 
+    private static int contadorEmp = 0;
+
     int emprestimoId;
     Date data;
     Date data_prev_dev;
+
+    public Emprestimo(int emprestimoId){
+
+        emprestimoId = contadorEmp;
+        contadorEmp++;
+
+    }
 
     public int getemprestimoId() {
 

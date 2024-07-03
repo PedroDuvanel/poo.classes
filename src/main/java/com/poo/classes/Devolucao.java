@@ -3,9 +3,16 @@ package com.poo.classes;
 import java.util.Date;
 
 public class Devolucao {
-
+    private static int contadorDevolucao = 0;
     int devolucaoId;
     Date data_devolucao;
+
+    public Devolucao(int devolucaoId){
+
+        devolucaoId = contadorDevolucao;
+        contadorDevolucao++;
+
+    }
 
     public int getdevolucaoId() {
 

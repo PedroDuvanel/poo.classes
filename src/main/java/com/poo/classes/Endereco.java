@@ -2,13 +2,23 @@ package com.poo.classes;
 
 public class Endereco {
 
+    private static int contadorEnd = 0;
+
     int enderecoId;
     String uf;
     String cidade;
     String tipo;
     String lagradouro;
     String complemento;
-    int numEndereco;
+    int cep;
+
+    public Endereco(int cep, int enderecoId) {
+
+        this.cep = cep;
+        enderecoId = contadorEnd;
+        contadorEnd++;
+
+    }
 
     public int getenderecoId() {
 
@@ -46,9 +56,9 @@ public class Endereco {
 
     }
 
-    public int getnumEndereco() {
+    public int getCep() {
 
-        return numEndereco;
+        return cep;
 
     }
 
@@ -89,9 +99,9 @@ public class Endereco {
 
     }
 
-    public void setnumEndereco(int numEndereco) {
+    public void setCep(int cep) {
 
-        this.numEndereco = numEndereco;
+        this.cep = cep;
 
     }
 

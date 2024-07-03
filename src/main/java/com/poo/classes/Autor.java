@@ -9,11 +9,6 @@ public class Autor {
 
     public Autor(String nome) {
 
-            if (nome == null || nome.trim().isEmpty()) {
-                throw new IllegalArgumentException("O nome do autor não pode ser vazio");
-            
-            }
-
         this.nome = nome;
         this.autorId = contadorAutor++;
 

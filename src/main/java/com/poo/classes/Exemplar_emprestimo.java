@@ -1,10 +1,17 @@
 package com.poo.classes;
 
-import java.util.Date;
-
 public class Exemplar_emprestimo {
 
+    private static int contadorEx = 0;
+
     int exemplarEmprestimoId;
+
+    public Exemplar_emprestimo(int exemplarEmprestimoId) {
+
+        exemplarEmprestimoId = contadorEx;
+        contadorEx++;
+
+    }
 
     public int getExemplarEmprestimoId() {
 
