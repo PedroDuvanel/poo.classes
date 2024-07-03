@@ -46,7 +46,11 @@ public class Pessoa {
 
     public  void setCpf( String cpf){
 
-        this.cpf = cpf;
+        if (isValidCpf(cpf)) {
+            this.cpf = cpf;
+        } else {
+            throw new IllegalArgumentException("CPF inválido. Deve conter exatamente 11 dígitos.");
+        }
 
     }
 
@@ -56,4 +60,10 @@ public class Pessoa {
 
     }
 
+    private boolean isValidCpf(String cpf) {
+
+        cpf = cpf.replaceAll("\\D", "");
+        
+        return cpf.length() == 11;
+    }
 }
