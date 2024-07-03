@@ -3,10 +3,23 @@ package com.poo.classes;
 
 public class Pessoa {
 
+    private static int contadorPessoa = 0;
+
     int pessoaId;
     String cpf;
     String rg;
     String nome;
+    private Endereco endereco;
+
+    Pessoa(String nome, String cpf, Endereco endereco, int pessoaId){
+
+        this.nome = nome;
+        this.cpf = cpf;
+        this.endereco = endereco;
+        this.pessoaId = contadorPessoa;
+        contadorPessoa++;
+
+    }
 
     public int getpessoaId() {
 
@@ -29,6 +42,12 @@ public class Pessoa {
     public String getRg() {
 
         return rg;
+
+    }
+
+    public Endereco getEndereco() {
+
+        return endereco;
 
     }
 
@@ -57,6 +76,12 @@ public class Pessoa {
     public void setRg( String rg) {
 
         this.rg = rg;
+
+    }
+
+    public void setEndereco(Endereco endereco) {
+        
+        this.endereco = endereco;
 
     }
 

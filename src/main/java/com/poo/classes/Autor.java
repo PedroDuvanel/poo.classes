@@ -2,7 +2,7 @@ package com.poo.classes;
 
 public class Autor {
 
-    private static int contador = 0;
+    private static int contadorAutor = 0;
 
     public int autorId;
     public String nome;
@@ -15,8 +15,8 @@ public class Autor {
             }
 
         this.nome = nome;
-        this.autorId = contador++;
-        
+        this.autorId = contadorAutor++;
+
     }
 
     public int getautorId() {
