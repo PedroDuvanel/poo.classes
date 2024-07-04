@@ -1,7 +1,7 @@
 package com.poo.classes;
 
 
-public class Pessoa {
+public abstract class Pessoa {
 
     private static int contadorPessoa = 0;
 
@@ -9,9 +9,9 @@ public class Pessoa {
     String cpf;
     String rg;
     String nome;
-    private Endereco endereco;
+    Endereco endereco;
 
-    Pessoa(String nome, String cpf, Endereco endereco, int pessoaId){
+    Pessoa(String nome, String cpf, Endereco endereco){
 
         this.nome = nome;
         this.cpf = cpf;
