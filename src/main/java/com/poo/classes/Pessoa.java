@@ -91,4 +91,10 @@ public abstract class Pessoa {
         
         return cpf.length() == 11;
     }
+
+    public abstract boolean autentica(String login, String senha);
+
+    public abstract void contraCheque (String salarioBase);
+    
+
 }

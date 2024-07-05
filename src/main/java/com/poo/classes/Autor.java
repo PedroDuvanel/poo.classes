@@ -1,6 +1,6 @@
 package com.poo.classes;
 
-public class Autor extends Pessoa {
+public abstract class Autor extends Pessoa {
 
     private static int contadorAutor = 0;
 
@@ -37,5 +37,5 @@ public class Autor extends Pessoa {
         this.nome = nome;
 
     }
-
+   
 }

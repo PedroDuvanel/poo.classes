@@ -1,14 +1,16 @@
 package com.poo.classes;
 
-public class Funcionario extends Pessoa {
+public abstract class Funcionario extends Pessoa {
 
     private String login;
     private String senha;
+    private double salarioBase;
     
-    public Funcionario (String nome, String cpf, Endereco endereco, String login, String senha) {
+    public Funcionario (String nome, String cpf, Endereco endereco, String login, String senha, double salarioBase) {
         super(nome, cpf, endereco);
         this.login = login;
         this.senha = senha;
+        this.salarioBase = salarioBase;
     }
 
     public String getLogin() {
@@ -27,6 +29,17 @@ public class Funcionario extends Pessoa {
         this.senha = senha;
     }
 
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public void setSalarioBase(double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
+    public abstract boolean autentica(String login, String senha);
+
+    public abstract void contraCheque (String salarioBase);
 
 
 }
