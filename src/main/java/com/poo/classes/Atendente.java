@@ -16,7 +16,7 @@ public class Atendente extends Funcionario{
         System.out.println("Salario base: " + getSalarioBase());
 
         double fgts = getSalarioBase() * 0.1;
-        double inss = getSalarioBase() * 0.12;
+        double inss = getSalarioBase() * 0.9;
         System.out.println("FGTS: " + fgts);
         System.out.println("INSS: " + inss);
 

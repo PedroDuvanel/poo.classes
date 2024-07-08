@@ -12,8 +12,9 @@ public class Endereco {
     String complemento;
     int cep;
 
-    public Endereco(int cep, int enderecoId, String cidade, String uf, String tipo, String lagradouro, String complemento) {
+    public Endereco(String cidade) {
 
+        this.cidade = cidade;
         this.cep = cep;
         enderecoId = contadorEnd;
         contadorEnd++;
